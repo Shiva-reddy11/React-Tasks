@@ -1,25 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{useEffect,useState} from 'react'
+import './App.css'
 
-function App() {
+
+
+
+function App (){
+  const [data,setData] = useState([]);
+  useEffect(()=>{
+    fetch('https://fakestoreapi.com/products')
+            .then((res)=>{
+              return res.json()
+            })
+            .then((val)=>{
+              setData(val)
+            })
+            console.log(data)
+  },[])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ 
+  <>
+  <table>
+    <th>id</th>
+    <th>title</th>
+    <th>category</th>
+    <th>description</th>
+    <th>image</th>
+    <th>price</th>
+    {data.map((item)=>
+    
+    <tr>
+    <td>{item.id}         </td>
+    <td>{item.title}      </td>
+    <td>{item.category}   </td>
+    <td>{item.description}</td>
+      <td> <img src={item.image} alt="shiva" width="130px"/></td> 
+    <td>{item.price}       </td>
+    </tr>
+    )}
+    </table>
+  </>
+  )
 }
 
 export default App;
+
+
+
+// {rate: 3.9, count: 120}
