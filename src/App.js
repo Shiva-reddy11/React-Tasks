@@ -47,4 +47,3 @@ export default App;
 
 
 
-// {rate: 3.9, count: 120}
