@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom"
 import '../App.css'
+import cartico from '../Assets/shopping-cart-add.png'
 
 const HomeScr = () =>{
     return(
     <>
-        <nav   className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav   className="navbar navbar-expand-lg navbar-light nav-bgc">
   <div className="container-fluid">
     <Link to={'/'} className="navbar-brand">
       Navigations
@@ -54,6 +55,13 @@ const HomeScr = () =>{
           Search
         </button>
       </form>
+      
+      <span className="nav-icon">
+        <Link to={'*'} >
+          <img src={cartico} height={'35px'}/>
+          </Link>
+          </span>
+       
     </div>
   </div>
 </nav>

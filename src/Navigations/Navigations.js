@@ -6,19 +6,21 @@ import AboutUs from "../Pages/About Us"
 import Products from "../Pages/Products"
 import MainPage from "../Pages/main page"
 import { createContext, useState  } from "react"
+import ProductData from "../Pages/ProductData"
 
 
 export const DataShare = createContext()
+
 const NavigationStact = () => {
+
   const [data,setData]=useState({ 
   border: '2px solid' ,
   margin:' 30px',
   height: '100px',
   backgroundColor: 'beige'})
-
+ 
   const Changeclr=()=>{
     setData({...data,backgroundColor:'red'})
-
   }
 
     return(
@@ -34,6 +36,7 @@ const NavigationStact = () => {
         <Route path="/contact" Component={contactUs}/>
         <Route path="/about" Component={AboutUs}/>
         <Route path="/products" Component={Products}/>
+        <Route path="products/:brand/:productId" Component={ProductData}/>
       </Routes>
       
       </BrowserRouter> 
@@ -41,3 +44,7 @@ const NavigationStact = () => {
     )
 }
 export default NavigationStact
+
+
+
+

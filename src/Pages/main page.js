@@ -11,8 +11,8 @@ function MainPage() {
    <>
    <HomeScr/>
    {/* <div className="bg-change"></div> */}
-   <div style={data}></div>
-<button onClick={Changeclr} >Change color</button> 
+   {/* <div style={data}></div> */}
+{/* <button onClick={Changeclr} >Change color</button>  */}
    </>
   )
 }

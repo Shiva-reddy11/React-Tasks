@@ -10,7 +10,7 @@ function AboutUs() {
     <div>
         <HomeScr/>
       <h1>AboutUs Page</h1>
-      <div style={Response.data}></div>
+      {/* <div style={Response.data}></div> */}
     </div>
   )
 }

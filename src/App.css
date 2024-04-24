@@ -11,18 +11,24 @@
   height: 450px;
   width: 400px;
   margin: 10px;
-  /* display: flex;
-  flex-direction: row;
-  flex-wrap: wrap; */
   text-align: center;
 }
 .titlename{
   text-align: center;
 }
+.nav-bgc{
+  background-color: aqua;
+}
 
-/* .bg-change{
-  border: 2px solid ;
-  margin: 30px;
-  height: 100px;
-  background-color: beige;
-} */
+.product-data{
+  text-align: center;
+}
+.text-deca{
+  text-decoration: none;
+  color: black;
+}
+
+.nav-icon{
+  /* margin: 10px; */
+  padding: 10px;
+}

@@ -8,7 +8,7 @@ function PageNotFound() {
   return (
     <div>
       <h1>Page not Found</h1>
-      <div style={Response.data}></div>
+      {/* <div style={Response.data}></div> */}
       <button ><Link to={'/'}>Back to Home Page</Link></button>
       
     </div>
